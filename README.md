@@ -77,8 +77,11 @@ Dependency injection is a design pattern where a code construct **receives** its
 
 Consider a frontend component that displays a user's profile information.
 
+<figcaption>pseudo-code</figcaption>
+
 ```tsx
 function ProfileComponent(userID: string) {
+
   // Retrieve profile information
   user = fetch("https://api.mycompany.com/api/users/" + useriD)
 
