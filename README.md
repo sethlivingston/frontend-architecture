@@ -28,7 +28,7 @@ All of this in one component and one file! The result is code that's difficult t
 
 Let's start with the two principles that underly all best practices in software development: high cohesion and low coupling.
 
-**Note 3.a**: We use the phrase <u>code constructs</u> in this guide to succinctly describe functions, methods, classes, components, packages, and modules.
+**Note 3.a**: We use the phrase ***code constructs*** in this guide to succinctly describe functions, methods, classes, components, packages, and modules.
 
 ### 3.1. Principle: high cohesion
 
@@ -67,7 +67,7 @@ The rest of this guide shows you how.
 
 The next step is to take the principles of high cohesion and low coupling and turn them into specific, actionable practices. For each of these practices we illustrate how to implement them with different frontend technologies.
 
-**Note 4.a.**: The sections below use a <u>pseudo-language</u> and a <u>pseudo-framework</u> to demonstrate best practices. If the pseudo-code is a little too far off from what you're using to build your frontend application, then don't worry: each section includes implementations using your favorite frontend technology.
+**Note 4.a.**: The sections below use a ***pseudo-language*** and a ***pseudo-framework*** to demonstrate best practices. If the pseudo-code is a little too far off from what you're using to build your frontend application, then don't worry: each section includes implementations using your favorite frontend technology.
 
 ### 4.1. Composition
 
