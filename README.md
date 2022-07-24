@@ -28,7 +28,7 @@ All of this in one component and one file! The result is code that's difficult t
 
 Let's start with the two principles that underly all best practices in software development: high cohesion and low coupling.
 
-Note: We use the phrase **code constructs** in this guide to succinctly describe functions, classes, components, and packages/modules.
+**Note 3.a**: We use the phrase <u>code constructs</u> in this guide to succinctly describe functions, methods, classes, components, packages, and modules.
 
 ### 3.1. Principle: high cohesion
 
@@ -63,4 +63,40 @@ The key to fixing this component is increasing cohesion and reducing coupling.
 
 The rest of this guide shows you how.
 
-## 4. Getting specific
+## 4. Best practices
+
+The next step is to take the principles of high cohesion and low coupling and turn them into specific, actionable practices. For each of these practices we illustrate how to implement them with different frontend technologies.
+
+**Note 4.a.**: The sections below use a <u>pseudo-language</u> and a <u>pseudo-framework</u> to demonstrate best practices. If the pseudo-code is a little too far off from what you're using to build your frontend application, then don't worry: each section includes implementations using your favorite frontend technology.
+
+### 4.1. Composition
+
+### 4.2. Dependency injection
+
+Dependency injection is a design pattern where a code construct **receives** its dependencies rather than hard-coding them internally. This reduces coupling and usually increases cohesion. 
+
+Consider a frontend component that displays a user's profile information.
+
+```tsx
+function ProfileComponent(userID: string) {
+  // Retrieve profile information
+  user = fetch("https://api.mycompany.com/api/users/" + useriD)
+
+  // Render the component
+  return (
+    <div>
+      <p>Name: {user.firstName} {user.lastName}</p>
+      <p>Email: {user.email}</p>
+    </div>
+  )
+}
+```
+
+This component has two problematic dependencies.
+
+1. It's coupled to the `https://api.mycompany.com/api/users/` URL. 
+2. It's coupled to a function `fetch` that makes a remote HTTP call.
+
+This component is very difficult to unit test and will require modification if we want to fetch the user from something other than `https://api.mycompany.com`.
+
+[Here's how to fix it.](/docs/dependency-injection.md)
