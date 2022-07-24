@@ -32,7 +32,7 @@ Let's start with the two principles that underly all best practices in software 
 
 ### 3.1. Principle: high cohesion
 
-Cohesion is a measure of how focused a code construct's responsibilities are. A code construct with one responsibility is easier to understand, maintain, and reuse. The [Unix Philosophy](https://en.wikipedia.org/wiki/Unix_philosophy#Do_One_Thing_and_Do_It_Well) calls this, "Do One Thing and Do It Well (DOTADIW)". 
+Cohesion is a measure of how focused a code construct's responsibilities are. A code construct with a single, focused responsibility is easier to understand, maintain, and reuse. The [Unix Philosophy](https://en.wikipedia.org/wiki/Unix_philosophy#Do_One_Thing_and_Do_It_Well) calls this, "Do One Thing and Do It Well (DOTADIW)". 
 
 Cohesion in action:
 
@@ -50,7 +50,7 @@ Coupling in action:
 - Have you ever had trouble unit testing a function because it makes calls to a specific API URL? That's high coupling.
 - Have you ever had an easy time unit testing a function because it worked the same regardless of whether it ran in your local testing environment or in production? That's low coupling.
 
-Read more about [coupling on Wikipedia](https://en.wikipedia.org/wiki/Coupling_(computer_programming)).
+Read more about [coupling on Wikipedia](https://en.wikipedia.org/wiki/Coupling_(computer_programming)). It's also the final concept in [Uncle Bob's SOLID Principles](https://en.wikipedia.org/wiki/Dependency_inversion_principle).
 
 ### 3.3. Revisiting the problem
 
